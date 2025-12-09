@@ -1,0 +1,201 @@
+/* :root {
+    --ifm-color-primary: #6a0dad;
+    --ifm-color-primary-dark: #5c0ba3;
+    --ifm-color-primary-darker: #50099a;
+    --ifm-color-primary-darkest: #42078f;
+    --ifm-color-primary-light: #7f1ed0;
+    --ifm-color-primary-lighter: #9a3de3;
+    --ifm-color-primary-lightest: #b567f0;
+    --ifm-code-font-size: 95%;
+    --ifm-background-color: #f6edff;
+    --docusaurus-highlighted-code-line-bg: rgba(106, 13, 173, 0.1);
+}
+
+html[data-theme='dark'] {
+    --ifm-color-primary: #a05ffb;
+    --ifm-color-primary-dark: #944ef5;
+    --ifm-color-primary-darker: #833be8;
+    --ifm-color-primary-darkest: #6f2acb;
+    --ifm-color-primary-light: #b173fc;
+    --ifm-color-primary-lighter: #c08dfd;
+    --ifm-color-primary-lightest: #d0a7fe;
+    --ifm-background-color: #1a0030 !important;
+    --ifm-navbar-background-color: #240044 !important;
+    --ifm-footer-background-color: #240044 !important;
+    background: #1a0030 !important;
+}
+
+html[data-theme='dark'] .featureCard {
+    background: #2d0050 !important;
+    color: #fff !important;
+}
+
+
+/* If your cards use .card class */
+
+
+/* html[data-theme='dark'] .card {
+    background: #2d0050 !important;
+    color: #fff !important;
+} */
+
+
+/* -----------------------------------
+   Base Theme Variables (Light)
+----------------------------------- */
+
+:root {
+    /* Primary Colors */
+    --ifm-color-primary: #6a0dad;
+    --ifm-color-primary-dark: #5c0ba3;
+    --ifm-color-primary-darker: #50099a;
+    --ifm-color-primary-darkest: #42078f;
+    --ifm-color-primary-light: #7f1ed0;
+    --ifm-color-primary-lighter: #9a3de3;
+    --ifm-color-primary-lightest: #b567f0;
+    /* Light mode background */
+    --ifm-background-color: #fdfaff;
+    --ifm-navbar-background-color: #ffffff;
+    --ifm-footer-background-color: #ffffff;
+    /* Headings */
+    --ifm-heading-color: #2e0a6f;
+    /* Cards */
+    --ifm-card-background: #d9b2f0;
+    --ifm-card-text-color: #1a001f;
+    /* Body text */
+    --ifm-body-color: #1a001f;
+}
+
+
+/* Dark mode */
+
+html[data-theme='dark'] {
+    --ifm-color-primary: #a05ffb;
+    --ifm-color-primary-dark: #944ef5;
+    --ifm-color-primary-darker: #833be8;
+    --ifm-color-primary-darkest: #6f2acb;
+    --ifm-color-primary-light: #b173fc;
+    --ifm-color-primary-lighter: #c08dfd;
+    --ifm-color-primary-lightest: #d0a7fe;
+    --ifm-background-color: #1a0030 !important;
+    --ifm-navbar-background-color: #240044 !important;
+    --ifm-footer-background-color: #240044 !important;
+    --ifm-heading-color: #fff;
+    --ifm-card-background: #2d0050;
+    --ifm-card-text-color: #fff;
+    --ifm-body-color: #fff;
+}
+
+
+/* General body */
+
+body {
+    background-color: var(--ifm-background-color);
+    color: var(--ifm-body-color);
+    transition: all 0.3s ease;
+}
+
+
+/* Navbar & Footer */
+
+.navbar,
+.footer {
+    background-color: var(--ifm-navbar-background-color);
+    transition: background-color 0.3s ease;
+}
+
+
+/* Headings */
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--ifm-heading-color) !important;
+    transition: color 0.3s ease;
+}
+
+
+/* Cards */
+
+.card,
+.featureCard {
+    background-color: var(--ifm-card-background);
+    color: var(--ifm-card-text-color);
+    border-radius: 18px;
+    padding: 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+ul,
+li {
+    color: var(--ifm-card-text-color);
+}
+
+p {
+    color: var(--ifm-card-text-color) !important;
+}
+
+
+/* Card hover effect */
+
+.card:hover,
+.featureCard:hover {
+    transform: translateY(-6px);
+}
+
+
+/* Force light mode styles */
+
+html[data-theme='light'] .card,
+html[data-theme='light'] .featureCard {
+    background-color: var(--ifm-card-background) !important;
+    color: var(--ifm-card-text-color) !important;
+}
+
+
+/* Dark mode styles for featureCard */
+
+html[data-theme='dark'] .featureCard,
+html[data-theme='dark'] .card {
+    background-color: var(--ifm-card-background) !important;
+    color: var(--ifm-card-text-color) !important;
+}
+
+
+/* Feature section grid */
+
+.features {
+    padding: 3rem 0;
+}
+
+.featureGrid {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.featureImage {
+    width: 70px;
+    margin-bottom: 15px;
+}
+
+.navbar-button {
+    background-color: #6a0dad;
+    color: white !important;
+    border-radius: 5px;
+    padding: 5px 12px;
+    margin-left: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.navbar-button:hover {
+    background-color: #7f1ed0;
+    color: #fff !important;
+    text-decoration: none;
+}

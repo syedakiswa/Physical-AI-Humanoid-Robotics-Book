@@ -1,0 +1,47 @@
+/* .features {
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+  width: 100%;
+}
+
+.featureSvg {
+  height: 200px;
+  width: 200px;
+} */
+
+.features {
+    padding: 3rem 0;
+}
+
+.featureGrid {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.featureCard {
+    background: var(--ifm-card-background, #ffffff);
+    border-radius: 18px;
+    padding: 20px;
+    width: 280px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    transition: transform 0.2s ease;
+}
+
+.featureCard:hover {
+    transform: translateY(-6px);
+}
+
+.featureImage {
+    width: 70px;
+    margin-bottom: 15px;
+}
+
+[data-theme='dark'] .featureCard {
+    background: #2e004f;
+    /* Dark purple card */
+    color: white;
+}

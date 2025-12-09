@@ -1,0 +1,10 @@
+{
+    "label": "Module 1: The Robotic Nervous System (ROS 2)",
+    "position": 3,
+    "link": {
+        "type": "generated-index",
+        "title": "Module 1: Mastering ROS 2 for Humanoid Robots",
+        "description": "Four intensive weeks from zero to production-grade ROS 2 engineer.",
+        "slug": "/Module-1"
+    }
+}
