@@ -4,7 +4,7 @@ import styles from "./index.module.css";
 import Link from "@docusaurus/Link";
 import Footer from "../components/Footer";
 import PhysicalAISection from '../components/PhysicalAISection';
-import ChatWidget from "../components/ChatWidget";
+
 export default function Home() {
   return (
     <Layout
