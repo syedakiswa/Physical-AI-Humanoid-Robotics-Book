@@ -1,31 +1,4 @@
-/**
- * CSS files with the .module.css suffix will be treated as CSS modules
- * and scoped locally.
- */
-
-
-/* .heroBanner {
-    padding: 4rem 0;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-}
-
-@media screen and (max-width: 996px) {
-    .heroBanner {
-        padding: 2rem;
-    }
-}
-
-.buttons {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-} */
-
-
 /* HERO SECTION */
-
 .heroSection {
     display: flex;
     align-items: center;
@@ -35,6 +8,7 @@
     color: #fff;
     border-radius: 20px;
     margin-bottom: 50px;
+    flex-wrap: wrap;
 }
 
 .heroContent {
@@ -70,13 +44,12 @@
     background: #eee;
 }
 
-
 /* HERO IMAGE */
-
 .heroImageBox {
     width: 45%;
     display: flex;
     justify-content: center;
+    margin-top: 20px;
 }
 
 .heroImage {
@@ -85,17 +58,14 @@
     border-radius: 15px;
 }
 
+/* READ SECTION */
 .readSection {
-    /* background: #f6edff; */
-    /* halka purple */
     padding: 60px 0;
 }
 
 .readCard {
     background: #4d00b9;
-    /* card ka white color */
     border-left: 4px solid #8b37ff;
-    /* purple line */
     padding: 18px 20px;
     margin: 15px 0;
     border-radius: 12px;
@@ -105,9 +75,7 @@
     font-size: 17px;
 }
 
-
 /* SECTIONS */
-
 .section {
     padding: 60px 30px;
 }
@@ -125,9 +93,7 @@
     color: #ffffff;
 }
 
-
 /* CARDS */
-
 .cardGrid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -147,9 +113,7 @@
     transform: translateY(-5px);
 }
 
-
 /* FEATURE LIST */
-
 .featureList {
     display: flex;
     flex-direction: column;
@@ -164,4 +128,78 @@
     border-radius: 10px;
     border-left: 5px solid #6a3cbc;
     font-size: 18px;
+}
+
+/* RESPONSIVE MEDIA QUERIES */
+
+/* Tablets */
+@media screen and (max-width: 996px) {
+    .heroSection {
+        padding: 50px 20px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .heroContent {
+        width: 100%;
+    }
+
+    .heroImageBox {
+        width: 80%;
+        margin-top: 30px;
+    }
+
+    .heroTitle {
+        font-size: 36px;
+    }
+
+    .heroSubtitle {
+        font-size: 16px;
+    }
+
+    .cardGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 600px) {
+    .heroSection {
+        padding: 30px 15px;
+    }
+
+    .heroTitle {
+        font-size: 28px;
+    }
+
+    .heroSubtitle {
+        font-size: 14px;
+    }
+
+    .heroButton {
+        font-size: 16px;
+        padding: 12px 24px;
+    }
+
+    .heroImageBox {
+        width: 100%;
+    }
+
+    .cardGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .section {
+        padding: 40px 15px;
+    }
+
+    .readCard {
+        font-size: 15px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .featureItem {
+        font-size: 16px;
+    }
 }
