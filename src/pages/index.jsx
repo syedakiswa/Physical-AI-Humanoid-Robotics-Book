@@ -7,6 +7,7 @@ import PhysicalAISection from '../components/PhysicalAISection';
 
 export default function Home() {
   return (
+    <>
     <Layout
       title="Physicall AI – Humanoid Knowledge"
       description="Explore the next generation of AI and Humanoid Robotics"
@@ -78,5 +79,9 @@ export default function Home() {
 
 
     </Layout>
+
+    
+
+    </>
   );
 }
